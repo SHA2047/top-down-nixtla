@@ -1,0 +1,377 @@
+2024-06-09 22:19:31,827 - INFO - Starting the forecasting comparison process
+2024-06-09 22:19:31,832 - INFO - Training data shape: (100, 2), Testing data shape: (20, 2)
+2024-06-09 22:19:36,889 - INFO - Model: AutoETS, Train End Date: 2023-10-01 00:00:00, MAPE: 0.0917
+2024-06-09 22:19:36,955 - INFO - Model: AutoETS, Train End Date: 2023-11-01 00:00:00, MAPE: 0.1083
+2024-06-09 22:19:37,020 - INFO - Model: AutoETS, Train End Date: 2023-12-01 00:00:00, MAPE: 0.0940
+2024-06-09 22:19:37,087 - INFO - Model: AutoETS, Train End Date: 2024-01-01 00:00:00, MAPE: 0.0988
+2024-06-09 22:19:37,153 - INFO - Model: AutoETS, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1419
+2024-06-09 22:19:37,218 - INFO - Model: AutoETS, Train End Date: 2024-03-01 00:00:00, MAPE: 0.1068
+2024-06-09 22:19:37,221 - INFO - Model: AutoETS, Average MAPE: 0.1069
+2024-06-09 22:19:39,783 - INFO - Model: AutoARIMA, Train End Date: 2023-10-01 00:00:00, MAPE: 0.2795
+2024-06-09 22:19:39,857 - INFO - Model: AutoARIMA, Train End Date: 2023-11-01 00:00:00, MAPE: 0.3484
+2024-06-09 22:19:39,923 - INFO - Model: AutoARIMA, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2797
+2024-06-09 22:19:39,989 - INFO - Model: AutoARIMA, Train End Date: 2024-01-01 00:00:00, MAPE: 0.2268
+2024-06-09 22:19:40,053 - INFO - Model: AutoARIMA, Train End Date: 2024-02-01 00:00:00, MAPE: 0.2628
+2024-06-09 22:19:40,127 - INFO - Model: AutoARIMA, Train End Date: 2024-03-01 00:00:00, MAPE: 0.0040
+2024-06-09 22:19:40,129 - INFO - Model: AutoARIMA, Average MAPE: 0.2336
+2024-06-09 22:19:40,132 - INFO - Model: HistoricAverage, Train End Date: 2023-10-01 00:00:00, MAPE: 0.3466
+2024-06-09 22:19:40,135 - INFO - Model: HistoricAverage, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2920
+2024-06-09 22:19:40,140 - INFO - Model: HistoricAverage, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2369
+2024-06-09 22:19:40,144 - INFO - Model: HistoricAverage, Train End Date: 2024-01-01 00:00:00, MAPE: 0.2883
+2024-06-09 22:19:40,147 - INFO - Model: HistoricAverage, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1258
+2024-06-09 22:19:40,150 - INFO - Model: HistoricAverage, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2077
+2024-06-09 22:19:40,152 - INFO - Model: HistoricAverage, Average MAPE: 0.2496
+2024-06-09 22:19:40,155 - INFO - Model: Naive, Train End Date: 2023-10-01 00:00:00, MAPE: 0.2616
+2024-06-09 22:19:40,158 - INFO - Model: Naive, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2273
+2024-06-09 22:19:40,162 - INFO - Model: Naive, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2550
+2024-06-09 22:19:40,170 - INFO - Model: Naive, Train End Date: 2024-01-01 00:00:00, MAPE: 0.3764
+2024-06-09 22:19:40,175 - INFO - Model: Naive, Train End Date: 2024-02-01 00:00:00, MAPE: 0.3267
+2024-06-09 22:19:40,180 - INFO - Model: Naive, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2634
+2024-06-09 22:19:40,182 - INFO - Model: Naive, Average MAPE: 0.2851
+2024-06-09 22:19:40,186 - INFO - Model: RandomWalkWithDrift, Train End Date: 2023-10-01 00:00:00, MAPE: 0.2887
+2024-06-09 22:19:40,192 - INFO - Model: RandomWalkWithDrift, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2442
+2024-06-09 22:19:40,198 - INFO - Model: RandomWalkWithDrift, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2620
+2024-06-09 22:19:40,203 - INFO - Model: RandomWalkWithDrift, Train End Date: 2024-01-01 00:00:00, MAPE: 0.3749
+2024-06-09 22:19:40,207 - INFO - Model: RandomWalkWithDrift, Train End Date: 2024-02-01 00:00:00, MAPE: 0.3360
+2024-06-09 22:19:40,211 - INFO - Model: RandomWalkWithDrift, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2620
+2024-06-09 22:19:40,214 - INFO - Model: RandomWalkWithDrift, Average MAPE: 0.2946
+2024-06-09 22:19:40,218 - INFO - Model: SeasonalNaive, Train End Date: 2023-10-01 00:00:00, MAPE: 0.1058
+2024-06-09 22:19:40,221 - INFO - Model: SeasonalNaive, Train End Date: 2023-11-01 00:00:00, MAPE: 0.1088
+2024-06-09 22:19:40,225 - INFO - Model: SeasonalNaive, Train End Date: 2023-12-01 00:00:00, MAPE: 0.1355
+2024-06-09 22:19:40,231 - INFO - Model: SeasonalNaive, Train End Date: 2024-01-01 00:00:00, MAPE: 0.1783
+2024-06-09 22:19:40,236 - INFO - Model: SeasonalNaive, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1273
+2024-06-09 22:19:40,240 - INFO - Model: SeasonalNaive, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2499
+2024-06-09 22:19:40,243 - INFO - Model: SeasonalNaive, Average MAPE: 0.1509
+2024-06-09 22:19:40,248 - INFO - Model: WindowAverage, Train End Date: 2023-10-01 00:00:00, MAPE: 0.3504
+2024-06-09 22:19:40,251 - INFO - Model: WindowAverage, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2991
+2024-06-09 22:19:40,254 - INFO - Model: WindowAverage, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2412
+2024-06-09 22:19:40,259 - INFO - Model: WindowAverage, Train End Date: 2024-01-01 00:00:00, MAPE: 0.2985
+2024-06-09 22:19:40,264 - INFO - Model: WindowAverage, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1266
+2024-06-09 22:19:40,268 - INFO - Model: WindowAverage, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2136
+2024-06-09 22:19:40,271 - INFO - Model: WindowAverage, Average MAPE: 0.2549
+2024-06-09 22:19:40,272 - INFO - Best model selected: AutoETS
+2024-06-09 22:19:40,341 - INFO - Forecasting process completed
+2024-06-09 22:41:22,084 - INFO - Starting the forecasting comparison process
+2024-06-09 22:41:22,091 - INFO - Training data shape: (120, 2), Testing data shape: (120, 2)
+2024-06-09 22:42:30,276 - INFO - Starting the forecasting comparison process
+2024-06-09 22:42:30,279 - INFO - Training data shape: (100, 2), Testing data shape: (20, 2)
+2024-06-09 22:42:35,385 - INFO - Model: AutoETS, Train End Date: 2023-10-01 00:00:00, MAPE: 0.0917
+2024-06-09 22:42:35,451 - INFO - Model: AutoETS, Train End Date: 2023-11-01 00:00:00, MAPE: 0.1083
+2024-06-09 22:42:35,515 - INFO - Model: AutoETS, Train End Date: 2023-12-01 00:00:00, MAPE: 0.0940
+2024-06-09 22:42:35,583 - INFO - Model: AutoETS, Train End Date: 2024-01-01 00:00:00, MAPE: 0.0988
+2024-06-09 22:42:35,650 - INFO - Model: AutoETS, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1419
+2024-06-09 22:42:35,716 - INFO - Model: AutoETS, Train End Date: 2024-03-01 00:00:00, MAPE: 0.1068
+2024-06-09 22:42:35,719 - INFO - Model: AutoETS, Average MAPE: 0.1069
+2024-06-09 22:42:38,245 - INFO - Model: AutoARIMA, Train End Date: 2023-10-01 00:00:00, MAPE: 0.2795
+2024-06-09 22:42:38,323 - INFO - Model: AutoARIMA, Train End Date: 2023-11-01 00:00:00, MAPE: 0.3484
+2024-06-09 22:42:38,392 - INFO - Model: AutoARIMA, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2797
+2024-06-09 22:42:38,459 - INFO - Model: AutoARIMA, Train End Date: 2024-01-01 00:00:00, MAPE: 0.2268
+2024-06-09 22:42:38,523 - INFO - Model: AutoARIMA, Train End Date: 2024-02-01 00:00:00, MAPE: 0.2628
+2024-06-09 22:42:38,598 - INFO - Model: AutoARIMA, Train End Date: 2024-03-01 00:00:00, MAPE: 0.0040
+2024-06-09 22:42:38,600 - INFO - Model: AutoARIMA, Average MAPE: 0.2336
+2024-06-09 22:42:38,603 - INFO - Model: HistoricAverage, Train End Date: 2023-10-01 00:00:00, MAPE: 0.3466
+2024-06-09 22:42:38,606 - INFO - Model: HistoricAverage, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2920
+2024-06-09 22:42:38,610 - INFO - Model: HistoricAverage, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2369
+2024-06-09 22:42:38,613 - INFO - Model: HistoricAverage, Train End Date: 2024-01-01 00:00:00, MAPE: 0.2883
+2024-06-09 22:42:38,617 - INFO - Model: HistoricAverage, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1258
+2024-06-09 22:42:38,620 - INFO - Model: HistoricAverage, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2077
+2024-06-09 22:42:38,622 - INFO - Model: HistoricAverage, Average MAPE: 0.2496
+2024-06-09 22:42:38,625 - INFO - Model: Naive, Train End Date: 2023-10-01 00:00:00, MAPE: 0.2616
+2024-06-09 22:42:38,628 - INFO - Model: Naive, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2273
+2024-06-09 22:42:38,632 - INFO - Model: Naive, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2550
+2024-06-09 22:42:38,638 - INFO - Model: Naive, Train End Date: 2024-01-01 00:00:00, MAPE: 0.3764
+2024-06-09 22:42:38,644 - INFO - Model: Naive, Train End Date: 2024-02-01 00:00:00, MAPE: 0.3267
+2024-06-09 22:42:38,648 - INFO - Model: Naive, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2634
+2024-06-09 22:42:38,650 - INFO - Model: Naive, Average MAPE: 0.2851
+2024-06-09 22:42:38,654 - INFO - Model: RandomWalkWithDrift, Train End Date: 2023-10-01 00:00:00, MAPE: 0.2887
+2024-06-09 22:42:38,657 - INFO - Model: RandomWalkWithDrift, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2442
+2024-06-09 22:42:38,662 - INFO - Model: RandomWalkWithDrift, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2620
+2024-06-09 22:42:38,666 - INFO - Model: RandomWalkWithDrift, Train End Date: 2024-01-01 00:00:00, MAPE: 0.3749
+2024-06-09 22:42:38,670 - INFO - Model: RandomWalkWithDrift, Train End Date: 2024-02-01 00:00:00, MAPE: 0.3360
+2024-06-09 22:42:38,675 - INFO - Model: RandomWalkWithDrift, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2620
+2024-06-09 22:42:38,680 - INFO - Model: RandomWalkWithDrift, Average MAPE: 0.2946
+2024-06-09 22:42:38,684 - INFO - Model: SeasonalNaive, Train End Date: 2023-10-01 00:00:00, MAPE: 0.1058
+2024-06-09 22:42:38,688 - INFO - Model: SeasonalNaive, Train End Date: 2023-11-01 00:00:00, MAPE: 0.1088
+2024-06-09 22:42:38,691 - INFO - Model: SeasonalNaive, Train End Date: 2023-12-01 00:00:00, MAPE: 0.1355
+2024-06-09 22:42:38,696 - INFO - Model: SeasonalNaive, Train End Date: 2024-01-01 00:00:00, MAPE: 0.1783
+2024-06-09 22:42:38,700 - INFO - Model: SeasonalNaive, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1273
+2024-06-09 22:42:38,705 - INFO - Model: SeasonalNaive, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2499
+2024-06-09 22:42:38,709 - INFO - Model: SeasonalNaive, Average MAPE: 0.1509
+2024-06-09 22:42:38,713 - INFO - Model: WindowAverage, Train End Date: 2023-10-01 00:00:00, MAPE: 0.3504
+2024-06-09 22:42:38,716 - INFO - Model: WindowAverage, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2991
+2024-06-09 22:42:38,719 - INFO - Model: WindowAverage, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2412
+2024-06-09 22:42:38,723 - INFO - Model: WindowAverage, Train End Date: 2024-01-01 00:00:00, MAPE: 0.2985
+2024-06-09 22:42:38,727 - INFO - Model: WindowAverage, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1266
+2024-06-09 22:42:38,732 - INFO - Model: WindowAverage, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2136
+2024-06-09 22:42:38,735 - INFO - Model: WindowAverage, Average MAPE: 0.2549
+2024-06-09 22:44:33,539 - INFO - Starting the forecasting comparison process
+2024-06-09 22:44:33,543 - INFO - Training data shape: (100, 2), Testing data shape: (20, 2)
+2024-06-09 22:44:33,638 - INFO - Model: AutoETS, Train End Date: 2023-10-01 00:00:00, MAPE: 0.0917
+2024-06-09 22:44:33,705 - INFO - Model: AutoETS, Train End Date: 2023-11-01 00:00:00, MAPE: 0.1083
+2024-06-09 22:44:33,775 - INFO - Model: AutoETS, Train End Date: 2023-12-01 00:00:00, MAPE: 0.0940
+2024-06-09 22:44:33,841 - INFO - Model: AutoETS, Train End Date: 2024-01-01 00:00:00, MAPE: 0.0988
+2024-06-09 22:44:33,907 - INFO - Model: AutoETS, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1419
+2024-06-09 22:44:33,973 - INFO - Model: AutoETS, Train End Date: 2024-03-01 00:00:00, MAPE: 0.1068
+2024-06-09 22:44:33,975 - INFO - Model: AutoETS, Average MAPE: 0.1069
+2024-06-09 22:44:34,058 - INFO - Model: AutoARIMA, Train End Date: 2023-10-01 00:00:00, MAPE: 0.2795
+2024-06-09 22:44:34,133 - INFO - Model: AutoARIMA, Train End Date: 2023-11-01 00:00:00, MAPE: 0.3484
+2024-06-09 22:44:34,200 - INFO - Model: AutoARIMA, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2797
+2024-06-09 22:44:34,266 - INFO - Model: AutoARIMA, Train End Date: 2024-01-01 00:00:00, MAPE: 0.2268
+2024-06-09 22:44:34,330 - INFO - Model: AutoARIMA, Train End Date: 2024-02-01 00:00:00, MAPE: 0.2628
+2024-06-09 22:44:34,404 - INFO - Model: AutoARIMA, Train End Date: 2024-03-01 00:00:00, MAPE: 0.0040
+2024-06-09 22:44:34,406 - INFO - Model: AutoARIMA, Average MAPE: 0.2336
+2024-06-09 22:44:34,409 - INFO - Model: HistoricAverage, Train End Date: 2023-10-01 00:00:00, MAPE: 0.3466
+2024-06-09 22:44:34,413 - INFO - Model: HistoricAverage, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2920
+2024-06-09 22:44:34,416 - INFO - Model: HistoricAverage, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2369
+2024-06-09 22:44:34,419 - INFO - Model: HistoricAverage, Train End Date: 2024-01-01 00:00:00, MAPE: 0.2883
+2024-06-09 22:44:34,422 - INFO - Model: HistoricAverage, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1258
+2024-06-09 22:44:34,425 - INFO - Model: HistoricAverage, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2077
+2024-06-09 22:44:34,427 - INFO - Model: HistoricAverage, Average MAPE: 0.2496
+2024-06-09 22:44:34,430 - INFO - Model: Naive, Train End Date: 2023-10-01 00:00:00, MAPE: 0.2616
+2024-06-09 22:44:34,433 - INFO - Model: Naive, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2273
+2024-06-09 22:44:34,437 - INFO - Model: Naive, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2550
+2024-06-09 22:44:34,441 - INFO - Model: Naive, Train End Date: 2024-01-01 00:00:00, MAPE: 0.3764
+2024-06-09 22:44:34,447 - INFO - Model: Naive, Train End Date: 2024-02-01 00:00:00, MAPE: 0.3267
+2024-06-09 22:44:34,451 - INFO - Model: Naive, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2634
+2024-06-09 22:44:34,454 - INFO - Model: Naive, Average MAPE: 0.2851
+2024-06-09 22:44:34,457 - INFO - Model: RandomWalkWithDrift, Train End Date: 2023-10-01 00:00:00, MAPE: 0.2887
+2024-06-09 22:44:34,461 - INFO - Model: RandomWalkWithDrift, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2442
+2024-06-09 22:44:34,465 - INFO - Model: RandomWalkWithDrift, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2620
+2024-06-09 22:44:34,470 - INFO - Model: RandomWalkWithDrift, Train End Date: 2024-01-01 00:00:00, MAPE: 0.3749
+2024-06-09 22:44:34,475 - INFO - Model: RandomWalkWithDrift, Train End Date: 2024-02-01 00:00:00, MAPE: 0.3360
+2024-06-09 22:44:34,479 - INFO - Model: RandomWalkWithDrift, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2620
+2024-06-09 22:44:34,481 - INFO - Model: RandomWalkWithDrift, Average MAPE: 0.2946
+2024-06-09 22:44:34,484 - INFO - Model: SeasonalNaive, Train End Date: 2023-10-01 00:00:00, MAPE: 0.1058
+2024-06-09 22:44:34,487 - INFO - Model: SeasonalNaive, Train End Date: 2023-11-01 00:00:00, MAPE: 0.1088
+2024-06-09 22:44:34,491 - INFO - Model: SeasonalNaive, Train End Date: 2023-12-01 00:00:00, MAPE: 0.1355
+2024-06-09 22:44:34,496 - INFO - Model: SeasonalNaive, Train End Date: 2024-01-01 00:00:00, MAPE: 0.1783
+2024-06-09 22:44:34,501 - INFO - Model: SeasonalNaive, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1273
+2024-06-09 22:44:34,505 - INFO - Model: SeasonalNaive, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2499
+2024-06-09 22:44:34,507 - INFO - Model: SeasonalNaive, Average MAPE: 0.1509
+2024-06-09 22:44:34,512 - INFO - Model: WindowAverage, Train End Date: 2023-10-01 00:00:00, MAPE: 0.3504
+2024-06-09 22:44:34,516 - INFO - Model: WindowAverage, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2991
+2024-06-09 22:44:34,521 - INFO - Model: WindowAverage, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2412
+2024-06-09 22:44:34,527 - INFO - Model: WindowAverage, Train End Date: 2024-01-01 00:00:00, MAPE: 0.2985
+2024-06-09 22:44:34,531 - INFO - Model: WindowAverage, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1266
+2024-06-09 22:44:34,535 - INFO - Model: WindowAverage, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2136
+2024-06-09 22:44:34,536 - INFO - Model: WindowAverage, Average MAPE: 0.2549
+2024-06-09 22:44:34,538 - INFO - Best model selected: AutoETS
+2024-06-09 22:44:34,609 - INFO - Forecasting process completed
+2024-06-09 22:51:08,650 - INFO - Starting the forecasting comparison process
+2024-06-09 22:51:08,654 - INFO - Training data shape: (100, 2), Testing data shape: (20, 2)
+2024-06-09 22:51:10,646 - INFO - Starting the forecasting comparison process
+2024-06-09 22:51:10,648 - INFO - Training data shape: (100, 2), Testing data shape: (20, 2)
+2024-06-09 23:32:00,523 - INFO - Starting the forecasting comparison process
+2024-06-09 23:32:00,526 - INFO - Training data shape: (100, 2), Testing data shape: (20, 2)
+2024-06-09 23:32:24,296 - INFO - Starting the forecasting comparison process
+2024-06-09 23:32:24,298 - INFO - Training data shape: (100, 2), Testing data shape: (20, 2)
+2024-06-09 23:32:29,377 - INFO - Model: AutoETS, Train End Date: 2023-10-01 00:00:00, MAPE: 0.0917
+2024-06-09 23:32:29,442 - INFO - Model: AutoETS, Train End Date: 2023-11-01 00:00:00, MAPE: 0.1083
+2024-06-09 23:32:29,506 - INFO - Model: AutoETS, Train End Date: 2023-12-01 00:00:00, MAPE: 0.0940
+2024-06-09 23:32:29,570 - INFO - Model: AutoETS, Train End Date: 2024-01-01 00:00:00, MAPE: 0.0988
+2024-06-09 23:32:29,636 - INFO - Model: AutoETS, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1419
+2024-06-09 23:32:29,701 - INFO - Model: AutoETS, Train End Date: 2024-03-01 00:00:00, MAPE: 0.1068
+2024-06-09 23:32:29,703 - INFO - Model: AutoETS, Average MAPE: 0.1069
+2024-06-09 23:32:32,238 - INFO - Model: AutoARIMA, Train End Date: 2023-10-01 00:00:00, MAPE: 0.2795
+2024-06-09 23:32:32,314 - INFO - Model: AutoARIMA, Train End Date: 2023-11-01 00:00:00, MAPE: 0.3484
+2024-06-09 23:32:32,379 - INFO - Model: AutoARIMA, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2797
+2024-06-09 23:32:32,446 - INFO - Model: AutoARIMA, Train End Date: 2024-01-01 00:00:00, MAPE: 0.2268
+2024-06-09 23:32:32,509 - INFO - Model: AutoARIMA, Train End Date: 2024-02-01 00:00:00, MAPE: 0.2628
+2024-06-09 23:32:32,583 - INFO - Model: AutoARIMA, Train End Date: 2024-03-01 00:00:00, MAPE: 0.0040
+2024-06-09 23:32:32,585 - INFO - Model: AutoARIMA, Average MAPE: 0.2336
+2024-06-09 23:32:32,588 - INFO - Model: HistoricAverage, Train End Date: 2023-10-01 00:00:00, MAPE: 0.3466
+2024-06-09 23:32:32,591 - INFO - Model: HistoricAverage, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2920
+2024-06-09 23:32:32,595 - INFO - Model: HistoricAverage, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2369
+2024-06-09 23:32:32,599 - INFO - Model: HistoricAverage, Train End Date: 2024-01-01 00:00:00, MAPE: 0.2883
+2024-06-09 23:32:32,602 - INFO - Model: HistoricAverage, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1258
+2024-06-09 23:32:32,606 - INFO - Model: HistoricAverage, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2077
+2024-06-09 23:32:32,608 - INFO - Model: HistoricAverage, Average MAPE: 0.2496
+2024-06-09 23:32:32,611 - INFO - Model: Naive, Train End Date: 2023-10-01 00:00:00, MAPE: 0.2616
+2024-06-09 23:32:32,615 - INFO - Model: Naive, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2273
+2024-06-09 23:32:32,618 - INFO - Model: Naive, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2550
+2024-06-09 23:32:32,623 - INFO - Model: Naive, Train End Date: 2024-01-01 00:00:00, MAPE: 0.3764
+2024-06-09 23:32:32,628 - INFO - Model: Naive, Train End Date: 2024-02-01 00:00:00, MAPE: 0.3267
+2024-06-09 23:32:32,632 - INFO - Model: Naive, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2634
+2024-06-09 23:32:32,636 - INFO - Model: Naive, Average MAPE: 0.2851
+2024-06-09 23:32:32,641 - INFO - Model: RandomWalkWithDrift, Train End Date: 2023-10-01 00:00:00, MAPE: 0.2887
+2024-06-09 23:32:32,645 - INFO - Model: RandomWalkWithDrift, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2442
+2024-06-09 23:32:32,650 - INFO - Model: RandomWalkWithDrift, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2620
+2024-06-09 23:32:32,655 - INFO - Model: RandomWalkWithDrift, Train End Date: 2024-01-01 00:00:00, MAPE: 0.3749
+2024-06-09 23:32:32,661 - INFO - Model: RandomWalkWithDrift, Train End Date: 2024-02-01 00:00:00, MAPE: 0.3360
+2024-06-09 23:32:32,664 - INFO - Model: RandomWalkWithDrift, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2620
+2024-06-09 23:32:32,666 - INFO - Model: RandomWalkWithDrift, Average MAPE: 0.2946
+2024-06-09 23:32:32,670 - INFO - Model: SeasonalNaive, Train End Date: 2023-10-01 00:00:00, MAPE: 0.1058
+2024-06-09 23:32:32,675 - INFO - Model: SeasonalNaive, Train End Date: 2023-11-01 00:00:00, MAPE: 0.1088
+2024-06-09 23:32:32,680 - INFO - Model: SeasonalNaive, Train End Date: 2023-12-01 00:00:00, MAPE: 0.1355
+2024-06-09 23:32:32,684 - INFO - Model: SeasonalNaive, Train End Date: 2024-01-01 00:00:00, MAPE: 0.1783
+2024-06-09 23:32:32,689 - INFO - Model: SeasonalNaive, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1273
+2024-06-09 23:32:32,694 - INFO - Model: SeasonalNaive, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2499
+2024-06-09 23:32:32,696 - INFO - Model: SeasonalNaive, Average MAPE: 0.1509
+2024-06-09 23:32:32,700 - INFO - Model: WindowAverage, Train End Date: 2023-10-01 00:00:00, MAPE: 0.3504
+2024-06-09 23:32:32,704 - INFO - Model: WindowAverage, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2991
+2024-06-09 23:32:32,711 - INFO - Model: WindowAverage, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2412
+2024-06-09 23:32:32,716 - INFO - Model: WindowAverage, Train End Date: 2024-01-01 00:00:00, MAPE: 0.2985
+2024-06-09 23:32:32,720 - INFO - Model: WindowAverage, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1266
+2024-06-09 23:32:32,724 - INFO - Model: WindowAverage, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2136
+2024-06-09 23:32:32,726 - INFO - Model: WindowAverage, Average MAPE: 0.2549
+2024-06-09 23:32:32,727 - INFO - Best model selected: AutoETS
+2024-06-09 23:32:32,795 - INFO - Forecasting process completed
+2024-06-10 16:24:45,852 - INFO - Starting the forecasting comparison process
+2024-06-10 16:24:45,858 - INFO - Training data shape: (100, 2), Testing data shape: (20, 2)
+2024-06-10 16:24:50,964 - INFO - Model: AutoETS, Train End Date: 2023-10-01 00:00:00, MAPE: 0.0917
+2024-06-10 16:24:51,024 - INFO - Model: AutoETS, Train End Date: 2023-11-01 00:00:00, MAPE: 0.1083
+2024-06-10 16:24:51,083 - INFO - Model: AutoETS, Train End Date: 2023-12-01 00:00:00, MAPE: 0.0940
+2024-06-10 16:24:51,143 - INFO - Model: AutoETS, Train End Date: 2024-01-01 00:00:00, MAPE: 0.0988
+2024-06-10 16:24:51,203 - INFO - Model: AutoETS, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1419
+2024-06-10 16:24:51,265 - INFO - Model: AutoETS, Train End Date: 2024-03-01 00:00:00, MAPE: 0.1068
+2024-06-10 16:24:51,267 - INFO - Model: AutoETS, Average MAPE: 0.1069
+2024-06-10 16:24:53,788 - INFO - Model: AutoARIMA, Train End Date: 2023-10-01 00:00:00, MAPE: 0.2795
+2024-06-10 16:24:53,864 - INFO - Model: AutoARIMA, Train End Date: 2023-11-01 00:00:00, MAPE: 0.3484
+2024-06-10 16:24:53,932 - INFO - Model: AutoARIMA, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2797
+2024-06-10 16:24:54,065 - INFO - Model: AutoARIMA, Train End Date: 2024-01-01 00:00:00, MAPE: 0.2268
+2024-06-10 16:24:54,126 - INFO - Model: AutoARIMA, Train End Date: 2024-02-01 00:00:00, MAPE: 0.2628
+2024-06-10 16:24:54,198 - INFO - Model: AutoARIMA, Train End Date: 2024-03-01 00:00:00, MAPE: 0.0040
+2024-06-10 16:24:54,200 - INFO - Model: AutoARIMA, Average MAPE: 0.2336
+2024-06-10 16:24:54,203 - INFO - Model: HistoricAverage, Train End Date: 2023-10-01 00:00:00, MAPE: 0.3466
+2024-06-10 16:24:54,206 - INFO - Model: HistoricAverage, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2920
+2024-06-10 16:24:54,209 - INFO - Model: HistoricAverage, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2369
+2024-06-10 16:24:54,212 - INFO - Model: HistoricAverage, Train End Date: 2024-01-01 00:00:00, MAPE: 0.2883
+2024-06-10 16:24:54,216 - INFO - Model: HistoricAverage, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1258
+2024-06-10 16:24:54,219 - INFO - Model: HistoricAverage, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2077
+2024-06-10 16:24:54,221 - INFO - Model: HistoricAverage, Average MAPE: 0.2496
+2024-06-10 16:24:54,224 - INFO - Model: Naive, Train End Date: 2023-10-01 00:00:00, MAPE: 0.2616
+2024-06-10 16:24:54,227 - INFO - Model: Naive, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2273
+2024-06-10 16:24:54,231 - INFO - Model: Naive, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2550
+2024-06-10 16:24:54,238 - INFO - Model: Naive, Train End Date: 2024-01-01 00:00:00, MAPE: 0.3764
+2024-06-10 16:24:54,242 - INFO - Model: Naive, Train End Date: 2024-02-01 00:00:00, MAPE: 0.3267
+2024-06-10 16:24:54,247 - INFO - Model: Naive, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2634
+2024-06-10 16:24:54,249 - INFO - Model: Naive, Average MAPE: 0.2851
+2024-06-10 16:24:54,252 - INFO - Model: RandomWalkWithDrift, Train End Date: 2023-10-01 00:00:00, MAPE: 0.2887
+2024-06-10 16:24:54,256 - INFO - Model: RandomWalkWithDrift, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2442
+2024-06-10 16:24:54,260 - INFO - Model: RandomWalkWithDrift, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2620
+2024-06-10 16:24:54,264 - INFO - Model: RandomWalkWithDrift, Train End Date: 2024-01-01 00:00:00, MAPE: 0.3749
+2024-06-10 16:24:54,269 - INFO - Model: RandomWalkWithDrift, Train End Date: 2024-02-01 00:00:00, MAPE: 0.3360
+2024-06-10 16:24:54,275 - INFO - Model: RandomWalkWithDrift, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2620
+2024-06-10 16:24:54,277 - INFO - Model: RandomWalkWithDrift, Average MAPE: 0.2946
+2024-06-10 16:24:54,281 - INFO - Model: SeasonalNaive, Train End Date: 2023-10-01 00:00:00, MAPE: 0.1058
+2024-06-10 16:24:54,286 - INFO - Model: SeasonalNaive, Train End Date: 2023-11-01 00:00:00, MAPE: 0.1088
+2024-06-10 16:24:54,290 - INFO - Model: SeasonalNaive, Train End Date: 2023-12-01 00:00:00, MAPE: 0.1355
+2024-06-10 16:24:54,295 - INFO - Model: SeasonalNaive, Train End Date: 2024-01-01 00:00:00, MAPE: 0.1783
+2024-06-10 16:24:54,301 - INFO - Model: SeasonalNaive, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1273
+2024-06-10 16:24:54,304 - INFO - Model: SeasonalNaive, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2499
+2024-06-10 16:24:54,307 - INFO - Model: SeasonalNaive, Average MAPE: 0.1509
+2024-06-10 16:24:54,310 - INFO - Model: WindowAverage, Train End Date: 2023-10-01 00:00:00, MAPE: 0.3504
+2024-06-10 16:24:54,314 - INFO - Model: WindowAverage, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2991
+2024-06-10 16:24:54,317 - INFO - Model: WindowAverage, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2412
+2024-06-10 16:24:54,321 - INFO - Model: WindowAverage, Train End Date: 2024-01-01 00:00:00, MAPE: 0.2985
+2024-06-10 16:24:54,326 - INFO - Model: WindowAverage, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1266
+2024-06-10 16:24:54,330 - INFO - Model: WindowAverage, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2136
+2024-06-10 16:24:54,332 - INFO - Model: WindowAverage, Average MAPE: 0.2549
+2024-06-10 16:24:54,334 - INFO - Best model selected: AutoETS
+2024-06-10 16:24:54,397 - INFO - Forecasting process completed
+2024-06-10 21:56:22,325 - INFO - Starting the forecasting comparison process
+2024-06-10 21:56:22,329 - INFO - Training data shape: (100, 2), Testing data shape: (20, 2)
+2024-06-10 21:56:22,420 - INFO - Model: AutoETS, Train End Date: 2023-10-01 00:00:00, MAPE: 0.0917
+2024-06-10 21:56:22,483 - INFO - Model: AutoETS, Train End Date: 2023-11-01 00:00:00, MAPE: 0.1083
+2024-06-10 21:56:22,546 - INFO - Model: AutoETS, Train End Date: 2023-12-01 00:00:00, MAPE: 0.0940
+2024-06-10 21:56:22,609 - INFO - Model: AutoETS, Train End Date: 2024-01-01 00:00:00, MAPE: 0.0988
+2024-06-10 21:56:22,669 - INFO - Model: AutoETS, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1419
+2024-06-10 21:56:22,729 - INFO - Model: AutoETS, Train End Date: 2024-03-01 00:00:00, MAPE: 0.1068
+2024-06-10 21:56:22,731 - INFO - Model: AutoETS, Average MAPE: 0.1069
+2024-06-10 21:56:22,818 - INFO - Model: AutoARIMA, Train End Date: 2023-10-01 00:00:00, MAPE: 0.2795
+2024-06-10 21:56:22,894 - INFO - Model: AutoARIMA, Train End Date: 2023-11-01 00:00:00, MAPE: 0.3484
+2024-06-10 21:56:22,966 - INFO - Model: AutoARIMA, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2797
+2024-06-10 21:56:23,032 - INFO - Model: AutoARIMA, Train End Date: 2024-01-01 00:00:00, MAPE: 0.2268
+2024-06-10 21:56:23,094 - INFO - Model: AutoARIMA, Train End Date: 2024-02-01 00:00:00, MAPE: 0.2628
+2024-06-10 21:56:23,167 - INFO - Model: AutoARIMA, Train End Date: 2024-03-01 00:00:00, MAPE: 0.0040
+2024-06-10 21:56:23,169 - INFO - Model: AutoARIMA, Average MAPE: 0.2336
+2024-06-10 21:56:23,173 - INFO - Model: HistoricAverage, Train End Date: 2023-10-01 00:00:00, MAPE: 0.3466
+2024-06-10 21:56:23,176 - INFO - Model: HistoricAverage, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2920
+2024-06-10 21:56:23,180 - INFO - Model: HistoricAverage, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2369
+2024-06-10 21:56:23,183 - INFO - Model: HistoricAverage, Train End Date: 2024-01-01 00:00:00, MAPE: 0.2883
+2024-06-10 21:56:23,186 - INFO - Model: HistoricAverage, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1258
+2024-06-10 21:56:23,189 - INFO - Model: HistoricAverage, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2077
+2024-06-10 21:56:23,191 - INFO - Model: HistoricAverage, Average MAPE: 0.2496
+2024-06-10 21:56:23,194 - INFO - Model: Naive, Train End Date: 2023-10-01 00:00:00, MAPE: 0.2616
+2024-06-10 21:56:23,197 - INFO - Model: Naive, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2273
+2024-06-10 21:56:23,201 - INFO - Model: Naive, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2550
+2024-06-10 21:56:23,206 - INFO - Model: Naive, Train End Date: 2024-01-01 00:00:00, MAPE: 0.3764
+2024-06-10 21:56:23,211 - INFO - Model: Naive, Train End Date: 2024-02-01 00:00:00, MAPE: 0.3267
+2024-06-10 21:56:23,216 - INFO - Model: Naive, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2634
+2024-06-10 21:56:23,218 - INFO - Model: Naive, Average MAPE: 0.2851
+2024-06-10 21:56:23,222 - INFO - Model: RandomWalkWithDrift, Train End Date: 2023-10-01 00:00:00, MAPE: 0.2887
+2024-06-10 21:56:23,226 - INFO - Model: RandomWalkWithDrift, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2442
+2024-06-10 21:56:23,229 - INFO - Model: RandomWalkWithDrift, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2620
+2024-06-10 21:56:23,232 - INFO - Model: RandomWalkWithDrift, Train End Date: 2024-01-01 00:00:00, MAPE: 0.3749
+2024-06-10 21:56:23,236 - INFO - Model: RandomWalkWithDrift, Train End Date: 2024-02-01 00:00:00, MAPE: 0.3360
+2024-06-10 21:56:23,240 - INFO - Model: RandomWalkWithDrift, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2620
+2024-06-10 21:56:23,242 - INFO - Model: RandomWalkWithDrift, Average MAPE: 0.2946
+2024-06-10 21:56:23,247 - INFO - Model: SeasonalNaive, Train End Date: 2023-10-01 00:00:00, MAPE: 0.1058
+2024-06-10 21:56:23,252 - INFO - Model: SeasonalNaive, Train End Date: 2023-11-01 00:00:00, MAPE: 0.1088
+2024-06-10 21:56:23,257 - INFO - Model: SeasonalNaive, Train End Date: 2023-12-01 00:00:00, MAPE: 0.1355
+2024-06-10 21:56:23,260 - INFO - Model: SeasonalNaive, Train End Date: 2024-01-01 00:00:00, MAPE: 0.1783
+2024-06-10 21:56:23,265 - INFO - Model: SeasonalNaive, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1273
+2024-06-10 21:56:23,271 - INFO - Model: SeasonalNaive, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2499
+2024-06-10 21:56:23,273 - INFO - Model: SeasonalNaive, Average MAPE: 0.1509
+2024-06-10 21:56:23,277 - INFO - Model: WindowAverage, Train End Date: 2023-10-01 00:00:00, MAPE: 0.3504
+2024-06-10 21:56:23,281 - INFO - Model: WindowAverage, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2991
+2024-06-10 21:56:23,285 - INFO - Model: WindowAverage, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2412
+2024-06-10 21:56:23,291 - INFO - Model: WindowAverage, Train End Date: 2024-01-01 00:00:00, MAPE: 0.2985
+2024-06-10 21:56:23,295 - INFO - Model: WindowAverage, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1266
+2024-06-10 21:56:23,300 - INFO - Model: WindowAverage, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2136
+2024-06-10 21:56:23,303 - INFO - Model: WindowAverage, Average MAPE: 0.2549
+2024-06-10 21:56:23,304 - INFO - Best model selected: AutoETS
+2024-06-10 21:56:23,366 - INFO - Forecasting process completed
+2024-06-10 22:02:33,908 - INFO - Starting the forecasting comparison process
+2024-06-10 22:02:33,910 - INFO - Training data shape: (100, 2), Testing data shape: (20, 2)
+2024-06-10 22:02:34,007 - INFO - Model: AutoETS, Train End Date: 2023-10-01 00:00:00, MAPE: 0.0917
+2024-06-10 22:02:34,074 - INFO - Model: AutoETS, Train End Date: 2023-11-01 00:00:00, MAPE: 0.1083
+2024-06-10 22:02:34,140 - INFO - Model: AutoETS, Train End Date: 2023-12-01 00:00:00, MAPE: 0.0940
+2024-06-10 22:02:34,204 - INFO - Model: AutoETS, Train End Date: 2024-01-01 00:00:00, MAPE: 0.0988
+2024-06-10 22:02:34,267 - INFO - Model: AutoETS, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1419
+2024-06-10 22:02:34,331 - INFO - Model: AutoETS, Train End Date: 2024-03-01 00:00:00, MAPE: 0.1068
+2024-06-10 22:02:34,333 - INFO - Model: AutoETS, Average MAPE: 0.1069
+2024-06-10 22:02:34,425 - INFO - Model: AutoARIMA, Train End Date: 2023-10-01 00:00:00, MAPE: 0.2795
+2024-06-10 22:02:34,503 - INFO - Model: AutoARIMA, Train End Date: 2023-11-01 00:00:00, MAPE: 0.3484
+2024-06-10 22:02:34,572 - INFO - Model: AutoARIMA, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2797
+2024-06-10 22:02:34,640 - INFO - Model: AutoARIMA, Train End Date: 2024-01-01 00:00:00, MAPE: 0.2268
+2024-06-10 22:02:34,705 - INFO - Model: AutoARIMA, Train End Date: 2024-02-01 00:00:00, MAPE: 0.2628
+2024-06-10 22:02:34,781 - INFO - Model: AutoARIMA, Train End Date: 2024-03-01 00:00:00, MAPE: 0.0040
+2024-06-10 22:02:34,783 - INFO - Model: AutoARIMA, Average MAPE: 0.2336
+2024-06-10 22:02:34,786 - INFO - Model: HistoricAverage, Train End Date: 2023-10-01 00:00:00, MAPE: 0.3466
+2024-06-10 22:02:34,790 - INFO - Model: HistoricAverage, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2920
+2024-06-10 22:02:34,794 - INFO - Model: HistoricAverage, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2369
+2024-06-10 22:02:34,797 - INFO - Model: HistoricAverage, Train End Date: 2024-01-01 00:00:00, MAPE: 0.2883
+2024-06-10 22:02:34,800 - INFO - Model: HistoricAverage, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1258
+2024-06-10 22:02:34,803 - INFO - Model: HistoricAverage, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2077
+2024-06-10 22:02:34,805 - INFO - Model: HistoricAverage, Average MAPE: 0.2496
+2024-06-10 22:02:34,808 - INFO - Model: Naive, Train End Date: 2023-10-01 00:00:00, MAPE: 0.2616
+2024-06-10 22:02:34,811 - INFO - Model: Naive, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2273
+2024-06-10 22:02:34,815 - INFO - Model: Naive, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2550
+2024-06-10 22:02:34,818 - INFO - Model: Naive, Train End Date: 2024-01-01 00:00:00, MAPE: 0.3764
+2024-06-10 22:02:34,824 - INFO - Model: Naive, Train End Date: 2024-02-01 00:00:00, MAPE: 0.3267
+2024-06-10 22:02:34,828 - INFO - Model: Naive, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2634
+2024-06-10 22:02:34,831 - INFO - Model: Naive, Average MAPE: 0.2851
+2024-06-10 22:02:34,836 - INFO - Model: RandomWalkWithDrift, Train End Date: 2023-10-01 00:00:00, MAPE: 0.2887
+2024-06-10 22:02:34,840 - INFO - Model: RandomWalkWithDrift, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2442
+2024-06-10 22:02:34,844 - INFO - Model: RandomWalkWithDrift, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2620
+2024-06-10 22:02:34,848 - INFO - Model: RandomWalkWithDrift, Train End Date: 2024-01-01 00:00:00, MAPE: 0.3749
+2024-06-10 22:02:34,852 - INFO - Model: RandomWalkWithDrift, Train End Date: 2024-02-01 00:00:00, MAPE: 0.3360
+2024-06-10 22:02:34,858 - INFO - Model: RandomWalkWithDrift, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2620
+2024-06-10 22:02:34,860 - INFO - Model: RandomWalkWithDrift, Average MAPE: 0.2946
+2024-06-10 22:02:34,864 - INFO - Model: SeasonalNaive, Train End Date: 2023-10-01 00:00:00, MAPE: 0.1058
+2024-06-10 22:02:34,868 - INFO - Model: SeasonalNaive, Train End Date: 2023-11-01 00:00:00, MAPE: 0.1088
+2024-06-10 22:02:34,872 - INFO - Model: SeasonalNaive, Train End Date: 2023-12-01 00:00:00, MAPE: 0.1355
+2024-06-10 22:02:34,877 - INFO - Model: SeasonalNaive, Train End Date: 2024-01-01 00:00:00, MAPE: 0.1783
+2024-06-10 22:02:34,884 - INFO - Model: SeasonalNaive, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1273
+2024-06-10 22:02:34,890 - INFO - Model: SeasonalNaive, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2499
+2024-06-10 22:02:34,893 - INFO - Model: SeasonalNaive, Average MAPE: 0.1509
+2024-06-10 22:02:34,897 - INFO - Model: WindowAverage, Train End Date: 2023-10-01 00:00:00, MAPE: 0.3504
+2024-06-10 22:02:34,902 - INFO - Model: WindowAverage, Train End Date: 2023-11-01 00:00:00, MAPE: 0.2991
+2024-06-10 22:02:34,906 - INFO - Model: WindowAverage, Train End Date: 2023-12-01 00:00:00, MAPE: 0.2412
+2024-06-10 22:02:34,912 - INFO - Model: WindowAverage, Train End Date: 2024-01-01 00:00:00, MAPE: 0.2985
+2024-06-10 22:02:34,917 - INFO - Model: WindowAverage, Train End Date: 2024-02-01 00:00:00, MAPE: 0.1266
+2024-06-10 22:02:34,921 - INFO - Model: WindowAverage, Train End Date: 2024-03-01 00:00:00, MAPE: 0.2136
+2024-06-10 22:02:34,924 - INFO - Model: WindowAverage, Average MAPE: 0.2549
+2024-06-10 22:02:34,925 - INFO - Best model selected: AutoETS
+2024-06-10 22:02:34,990 - INFO - Forecasting process completed

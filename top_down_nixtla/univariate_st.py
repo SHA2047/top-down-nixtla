@@ -13,49 +13,7 @@ from statsforecast.models import (AutoARIMA, AutoETS, HistoricAverage,
 logging.basicConfig(filename='run_time_of_run.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
-# RollingModelEvaluator Class
-class RollingModelEvaluator:
-    def __init__(self, model, data, window_size=6):
-        self.model = model
-        self.data = data
-        self.window_size = window_size
-
-    def evaluate(self):
-        results = []
-        rolling_accuracies = pd.DataFrame()
-        last_train_date = self.data[self.data['y'].notna()]['ds'].max()
-        for i in range(self.window_size):
-            i = 6 - i
-            train_end_date = last_train_date - pd.DateOffset(months=i)
-            train_data = self.data[self.data['ds'] <= train_end_date].copy()
-            test_data = self.data[(self.data['ds'] > train_end_date) & (self.data['y'].notna())].copy()
-
-            if not test_data.empty:
-                self.model.fit(train_data)
-                predictions = self.model.predict(len(test_data))
-                print("length:")
-                print(len(predictions))
-                mape = mean_absolute_percentage_error(test_data['y'].values, predictions)
-                results.append({
-                    'train_end_date': train_end_date,
-                    'test_end_date': test_data['ds'].max(),
-                    'mape': mape
-                })
-
-                logging.info(f"Model: {self.model.name}, Train End Date: {train_end_date}, "
-                             f"MAPE: {mape:.4f}")
-
-            predictions = predictions.values
-            print("Here:")
-            display(pd.DataFrame(predictions, index=test_data['ds'].tolist(), columns=['y']))
-            display(test_data.set_index('ds')[['y']])
-            accuracies = np.subtract(1, np.abs(1 - pd.DataFrame(predictions, index=test_data['ds'].tolist(), columns=['y']) / test_data.set_index('ds')[['y']]))
-            accuracies = accuracies.rename(columns={'y': train_end_date}).T
-            rolling_accuracies = pd.concat([rolling_accuracies, accuracies])
-
-        return (pd.DataFrame(results), rolling_accuracies)
-
-
+from rollingmodelevaluator import *
 # TimeSeriesModel Base Class
 class TimeSeriesModel:
     def __init__(self, name):
@@ -240,44 +198,4 @@ def run_forecasting_comparison(data, dependent_var, selected_models):
     logging.info("Forecasting process completed")
     return results, best_model_name, pd.DataFrame({'date': future_dates, 'forecast': future_forecast})
 
-
-# Streamlit App
-st.title("Univariate Time Series Forecasting Comparison")
-
-# Upload input file
-uploaded_file = st.file_uploader("Upload CSV", type=["csv"])
-
-if uploaded_file is not None:
-    data = pd.read_csv(uploaded_file)
-    st.write("Data preview:")
-    st.dataframe(data.head())
-
-    # Specify the dependent variable
-    dependent_var = st.selectbox("Select the dependent variable:", [i for i in data.columns if i!="date"])
-
-    # Select univariate models
-    model_options = ['AutoETS', 'AutoARIMA', 'HistoricAverage', 'Naive', 'RandomWalkWithDrift', 'SeasonalNaive',
-                     'WindowAverage',
-                     # 'SeasonalWindowAverage'
-                     ]
-    selected_models = st.multiselect("Select univariate models:", model_options, default=model_options)
-
-    if st.button("Run Forecasting Comparison"):
-        if not selected_models:
-            st.error("Please select at least one model.")
-        else:
-            try:
-                Run forecasting comparison
-                results, best_model_name, future_forecast = run_forecasting_comparison(data, dependent_var,
-                                                                                       selected_models)
-
-                # Display results
-                st.write("Model Comparison Results:")
-                st.write(results)
-                st.write(f"Best Model: {best_model_name}")
-
-                st.write("Future Forecast:")
-                st.write(future_forecast)
-            except Exception as e:
-                st.error(f"An error occurred: {e}")
 
